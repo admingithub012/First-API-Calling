@@ -1,0 +1,46 @@
+.custom-button {
+    background-color: #04AA6D;
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.1s; /* Controls transition speed */
+}
+/* 1. Lock header at the top and align elements side-by-side */
+.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FFFFFF; /* Soft shade of white */
+    padding: 15px 20px;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Subtle shadow line */
+
+    /* Flexbox rules */
+    display: flex;
+    align-items: center;      /* Vertically aligns text and button perfectly */
+    justify-content: center; /* Keeps them close together on the left */
+    gap: 10px;                /* Controls exact spacing between H1 and Button */
+}
+
+/* Clear default margins from H1 so it aligns nicely */
+.fixed-top h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* 2. Push the scrollable list down so it starts below the header */
+.content {
+    margin-top: 100px; /* Adjust this value if your header is taller/shorter */
+    padding: 20px;
+}
+
+
+.custom-button:hover{
+    background-color: #036440;
+}
+div{
+    background-color: #FFFFF0;
+}
